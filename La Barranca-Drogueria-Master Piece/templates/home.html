@@ -1,0 +1,31 @@
+{% extends "baseingresado.html" %}
+
+{% block title %}
+	Inicio
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+<div class="row">
+	<div class="col-md-8 col-lg-8">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h1>Bienvenido a Drogueria la Barranca, lo que no corta arranca! Estimadisimo: {{usuario}}</h1>	
+		</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<div class="list-group">
+					<a href="/busquedaclientes" class="list-group-item list-group-item-action">Busqueda por Productos</a>
+					<a href="/busquedaproductos" class="list-group-item list-group-item-action">Busqueda por Clientes</a>
+	 	 			<a href="/masvendidos" class="list-group-item list-group-item-action">Productos mas Vendidos</a>
+	 				<a href="/clientesmasgastaron" class="list-group-item list-group-item-action">Mejores Clientes</a>
+	 				<a href="/ultimasventas" class="list-group-item list-group-item-action">Ultimas ventas</a>
+	 	</div>	
+	</div> 			
+</div>
+</div>
+{% endblock %}

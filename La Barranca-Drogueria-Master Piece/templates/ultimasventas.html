@@ -1,0 +1,38 @@
+{% extends "baseingresado.html" %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block page_content %}
+<div class="page-header">    
+</div>
+
+<div class="panel panel">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Ultimas ventas</div>
+ 
+  <!-- Table -->
+  <div class="panel-body">
+  <table class="table table-striped">
+    <tr>
+      <td><b>Codigo</b></td>
+      <td><b>Cliente</b></td>
+      <td><b>Producto</b></td>
+      <td><b>Cantidad</b></td>
+      <td><b>Precio</b></td>
+    </tr>
+    {% for item in listaventas %}
+    <tr>
+        <td>{{ item.codigo }}</td>
+        <td>{{ item.cliente }}</td>
+        <td>{{ item.producto }}</td>
+        <td>{{ item.cantidad }}</td>
+        <td>$ {{ item.precio }}</td>
+    </tr>
+    {% endfor %}
+    
+  </table>
+</div>
+</div>
+
+{% endblock %}
+
